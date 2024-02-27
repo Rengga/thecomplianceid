@@ -370,7 +370,12 @@
       <q-tabs
         no-caps
         align="justify"
-        class="tw-bg-default-2 text-white"
+        class=""
+        :class="
+          $q.dark.isActive
+            ? 'tw-bg-default-2 text-white'
+            : 'tw-bg-white tw-text-default-6'
+        "
         indicator-color="transparent"
         outside-arrows
         mobile-arrows
@@ -378,7 +383,11 @@
         <q-route-tab
           :to="{ name: 'dashboard' }"
           exact
-          exact-active-class="tw-bg-main-green"
+          :exact-active-class="
+            $q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white'
+          "
         >
           <span
             class="tw-text-xs tw-tracking-wide tw-font-light"
@@ -389,7 +398,10 @@
         <q-route-tab
           :to="{ name: 'tugas-saya-khusus' }"
           :class="{
-            'tw-bg-main-green': $route.name?.includes('tugas-saya'),
+            [$q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white']:
+              $route.name?.includes('tugas-saya'),
           }"
         >
           <span
@@ -403,7 +415,9 @@
         <q-route-tab
           :to="{ name: 'laporan-khusus' }"
           :class="{
-            'tw-bg-main-green':
+            [$q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white']:
               $route.name?.includes('laporan-khusus') ||
               $route.name?.includes('laporan-rutin') ||
               $route.name?.includes('laporan-internal') ||
@@ -431,7 +445,10 @@
         <q-route-tab
           :to="{ name: 'template-laporan-template' }"
           :class="{
-            'tw-bg-main-green': $route.name?.includes('template-laporan'),
+            [$q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white']:
+              $route.name?.includes('template-laporan'),
           }"
         >
           <span
@@ -445,7 +462,11 @@
         <q-route-tab
           :to="{ name: 'riwayat' }"
           exact
-          exact-active-class="tw-bg-main-green"
+          :exact-active-class="
+            $q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white'
+          "
         >
           <span
             class="tw-text-xs tw-tracking-wide tw-font-light"
@@ -456,7 +477,10 @@
         <q-route-tab
           :to="{ name: 'perpustakaan-rules' }"
           :class="{
-            'tw-bg-main-green': $route.name?.includes('perpustakaan'),
+            [$q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white']:
+              $route.name?.includes('perpustakaan'),
           }"
         >
           <span
@@ -468,9 +492,29 @@
           >
         </q-route-tab>
         <q-route-tab
+          :to="{ name: 'kalender' }"
+          :class="{
+            [$q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white']:
+              $route.name?.includes('kalender'),
+          }"
+        >
+          <span
+            class="tw-text-xs tw-tracking-wide tw-font-light"
+            :class="{
+              '!tw-font-semibold': $route.name?.includes('kalender'),
+            }"
+            >Kalendar</span
+          >
+        </q-route-tab>
+        <q-route-tab
           :to="{ name: 'pengaturan-menu' }"
           :class="{
-            'tw-bg-main-green': $route.name?.includes('pengaturan'),
+            [$q.dark.isActive
+              ? 'tw-bg-main-green'
+              : 'tw-bg-default-6 tw-text-white']:
+              $route.name?.includes('pengaturan'),
           }"
         >
           <span
