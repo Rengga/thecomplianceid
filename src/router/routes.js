@@ -222,6 +222,16 @@ const routes = [
           },
         ],
       },
+      {
+        path: "kalender",
+        children: [
+          {
+            path: "kalender",
+            name: "kalender",
+            component: () => import("src/pages/Kalender/KalenderPage.vue"),
+          },
+        ],
+      },
     ],
   },
 

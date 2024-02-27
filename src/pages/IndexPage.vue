@@ -3,9 +3,9 @@
     <div v-for="n in 1" :key="n" class="q-py-xs">
       <div class="">
         <q-page class="tw-px-10 tw-space-y-4">
-          <div class="tw-flex tw-flex-row tw-gap-4">
+          <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-4 tw-flex-wrap">
             <div
-              class="tw-bg-default-7 tw-shadow-md tw-p-8 tw-w-1/2 tw-rounded-xl tw-max-w-[774px] tw-max-h-[310px]"
+              class="tw-bg-default-7 tw-shadow-md tw-p-8 tw-w-full lg:tw-w-1/2 tw-rounded-xl lg:tw-max-w-[774px] lg:tw-max-h-[310px]"
             >
               <div class="tw-flex tw-justify-between">
                 <div
@@ -41,7 +41,7 @@
                 />
               </div>
               <div
-                class="tw-flex tw-flex-row tw-items-center tw-justify-between tw-gap-7"
+                class="tw-flex tw-flex-col lg:tw-flex-row tw-mt-4 lg:tw-mt-0 lg:tw-items-center lg:tw-justify-between tw-flex-wa tw-gap-7"
               >
                 <div class="d">
                   <span class="tw-text-3xl tw-text-default-6 tw-font-bold"
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div
-              class="tw-shadow-md tw-p-8 tw-w-1/2 tw-rounded-xl tw-max-w-[774px] tw-max-h-[310px]"
+              class="tw-shadow-md tw-p-8 lg:tw-w-1/2 tw-rounded-xl tw-max-w-[774px] tw-max-h-[310px]"
               :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
             >
               <div class="tw-flex tw-flex-col tw-justify-between tw-h-full">
@@ -107,9 +107,9 @@
               </div>
             </div>
           </div>
-          <div class="tw-flex tw-flex-row tw-gap-4">
+          <div class="tw-flex lg:tw-flex-row tw-gap-4 tw-flex-wrap">
             <div
-              class="tw-shadow-md tw-p-8 tw-w-1/2 tw-rounded-xl tw-max-w-[774px] tw-max-h-[310px]"
+              class="tw-shadow-md tw-p-8 lg:tw-w-1/2 tw-rounded-xl lg:tw-max-w-[774px] lg:tw-max-h-[310px]"
               :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
             >
               <div class="tw-flex tw-mb-6 tw-justify-between">
@@ -249,10 +249,10 @@
               </div>
             </div>
             <div
-              class="tw-w-1/2 tw-rounded-xl tw-flex tw-flex-row tw-gap-4 tw-max-w-[774px] tw-max-h-[310px]"
+              class="lg:tw-w-1/2 tw-rounded-xl tw-flex lg:tw-flex-row lg:tw-flex-nowrap tw-flex-wrap tw-gap-4 tw-max-w-[774px] lg:tw-max-h-[310px]"
             >
               <div
-                class="tw-shadow-md tw-p-8 tw-w-1/2 tw-rounded-xl tw-relative"
+                class="tw-shadow-md tw-p-8 lg:tw-w-1/2 tw-w-full tw-rounded-xl tw-relative"
                 :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
               >
                 <div class="tw-flex tw-justify-between">
@@ -270,11 +270,11 @@
                 </div>
                 <div
                   id="chart-single"
-                  class="tw-h-64 tw-absolute tw-top-12 tw-w-80"
+                  class="tw-h-64 lg:tw-absolute tw-top-12 tw-w-80"
                 ></div>
               </div>
               <div
-                class="tw-shadow-md tw-flex tw-flex-col tw-items-center tw-justify-between tw-p-8 tw-w-1/2 tw-rounded-xl tw-bg-default-6 tw-relative"
+                class="tw-shadow-md tw-flex tw-flex-col tw-items-center tw-justify-between tw-p-8 lg:tw-w-1/2 tw-w-full tw-rounded-xl tw-bg-default-6 tw-relative"
               >
                 <div class="tw-flex tw-justify-between tw-w-full">
                   <span
@@ -286,7 +286,7 @@
                 </div>
                 <div
                   id="chart-pie"
-                  class="tw-w-40 tw-absolute tw-bottom-[-22px]"
+                  class="lg:tw-w-40 tw-w-48 lg:tw-absolute lg:tw-bottom-[-px] tw-h-48"
                 ></div>
                 <div
                   class="tw-w-full tw-flex tw-justify-between tw-items-center tw-rounded-xl tw-p-2 tw-bg-green-300/20 tw-px-8"
@@ -321,9 +321,9 @@
             </div>
           </div>
 
-          <div class="tw-flex tw-flex-row tw-gap-4">
+          <div class="tw-flex lg:tw-flex-row tw-flex-wrap tw-gap-4">
             <div
-              class="tw-shadow-md tw-p-8 tw-w-1/2 tw-rounded-xl tw-max-w-[774px] tw-max-h-[310px]"
+              class="tw-shadow-md tw-p-8 lg:tw-w-1/2 tw-rounded-xl lg:tw-max-w-[774px] lg:tw-max-h-[310px]"
               :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
             >
               <div class="tw-flex tw-mb-6 tw-justify-between">
@@ -459,10 +459,10 @@
               </div>
             </div>
             <div
-              class="tw-w-1/2 tw-rounded-xl tw-flex tw-flex-row tw-gap-2 tw-max-w-[774px] tw-max-h-[310px]"
+              class="lg:tw-w-1/2 tw-w-full tw-rounded-xl tw-flex tw-flex-wrap lg:tw-flex-row tw-gap-4 lg:tw-max-w-[774px] lg:tw-max-h-[310px]"
             >
               <div
-                class="tw-shadow-md tw-p-10 tw-py-7 tw-w-1/2 tw-rounded-xl"
+                class="tw-shadow-md tw-p-10 tw-py-7 lg:tw-w-1/2 tw-w-full tw-rounded-xl lg:tw-max-w-[379px]"
                 :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
               >
                 <div class="tw-flex tw-mb-4 tw-justify-between tw-items-center">
@@ -593,7 +593,7 @@
                 </div>
               </div>
               <div
-                class="tw-shadow-md tw-px-10 tw-w-1/2 tw-rounded-xl"
+                class="tw-shadow-md tw-px-10 lg:tw-w-1/2 tw-rounded-xl lg:tw-max-w-[379px]"
                 :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
               >
                 <q-date
@@ -741,6 +741,20 @@ export default defineComponent({
       chart: {
         type: "column",
         backgroundColor: "transparent",
+        responsive: {
+          rules: [
+            {
+              condition: {
+                maxWidth: 90,
+              },
+              chartOptions: {
+                legend: {
+                  enabled: false,
+                },
+              },
+            },
+          ],
+        },
       },
       credits: {
         enabled: false,

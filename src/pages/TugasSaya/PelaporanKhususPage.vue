@@ -412,7 +412,7 @@
       </div>
 
       <div
-        class="lg:tw-col-span-2 xl:tw-col-span-1 tw-m-2 lg:tw-m-0 tw-tracking-wide tw-text-sm tw-rounded-t-md tw-flex tw-flex-col tw-space-y-3 !tw-mt-0 lg:!tw-mt-3 tw-py-2 md:tw-py-3 lg:tw-py-3"
+        class="lg:tw-col-span-2 xl:tw-col-span-1 tw-m-2 lg:tw-m-0 tw-tracking-wide tw-text-sm tw-rounded-t-md tw-flex tw-flex-col tw-space-y-3 !tw-mt-0 lg:!tw-mt-3 tw-py-2 md:tw-py-3 lg:tw-py-3 tw-hidden md:tw-flex"
         :class="
           $q.dark.isActive
             ? 'tw-bg-default-1 tw-text-white '
