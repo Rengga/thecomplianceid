@@ -1,0 +1,64 @@
+
+
+
+
+
+
+:class="$q.dark.isActive ? '':''"
+
+input-class=" dark:"
+
+'':
+row.status === 'In Progress',
+'tw-bg-default-2 text-status-review':
+row.status === 'Need Review',
+'tw-bg-default-2 text-status-sign':
+row.status === 'Sign',
+'tw-bg-default-2 text-status-approval':
+row.status === 'Upload And Approval',
+'tw-bg-default-2 text-status-completed':
+row.status === 'Completed',
+'tw-bg-default-2 text-status-deadline':
+row.status === 'Deadline',
+
+Lampiran Panduan ARIA Manajer Investasi
+
+<q-tabs
+            v-model="currentMenu"
+            inline-label
+            outside-arrows
+            mobile-arrows
+            no-caps
+            dense
+            indicator-color="transparent"
+            :class="
+              $q.dark.isActive ? 'tw-text-zinc-500' : 'tw-text-green-800/50'
+            "
+            :active-class="
+              $q.dark.isActive
+                ? 'tw-bg-default-3 tw-rounded-md tw-text-default-6'
+                : 'tw-bg-zinc-100/0 tw-rounded-md tw-text-default-6'
+            ">
+            <q-route-tab
+              name="Laporan"
+              label="Laporan"
+              :to="{
+                name: 'tugas-saya-detail',
+                params: { slug: document },
+                query: { ext: ext },
+              }"
+              exact
+            ></q-route-tab>
+            <q-tab name="Data Source" label="Data Source"></q-tab>
+            <q-tab name="Data Awal" label="Data Awal"></q-tab>
+            <q-route-tab
+              name="Flow builder"
+              label="Flow builder"
+              :to="{
+                name: 'laporan-detail-flow-builder',
+                params: { slug: document },
+              }"
+              exact
+            ></q-route-tab>
+            <q-tab name="Document Receipt" label="Document Receipt"></q-tab>
+          </q-tabs>

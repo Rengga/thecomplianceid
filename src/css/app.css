@@ -1,0 +1,423 @@
+/* app global css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.ff-worksans {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Custom Color */
+.text-custom-101010 {
+  color: #101010;
+}
+.bg-custom-101010 {
+  background: #101010;
+}
+.text-custom-101010-important {
+  color: #101010 !important;
+}
+.bg-custom-101010-important {
+  background: #101010 !important;
+}
+
+.text-main-green {
+  color: #50b748 !important;
+}
+.bg-main-green {
+  background: #50b748 !important;
+}
+.text-main-blue {
+  color: #0152f9 !important;
+}
+.bg-main-blue {
+  background: #0152f9 !important;
+}
+.text-main-blue-1 {
+  color: #0e3687 !important;
+}
+.bg-main-blue-1 {
+  background: #0e3687 !important;
+}
+.text-main-red {
+  color: #d62223 !important;
+}
+.bg-main-red {
+  background: #d62223 !important;
+}
+.text-main-red-1 {
+  color: #c10001 !important;
+}
+.bg-main-red-1 {
+  background: #c10001 !important;
+}
+.text-main-orange {
+  color: #fa7317 !important;
+}
+.bg-main-orange {
+  background: #fa7317 !important;
+}
+.text-main-gold {
+  color: #bba64d !important;
+}
+.bg-main-gold {
+  background: #bba64d !important;
+}
+.text-main-yellow {
+  color: #edb21d !important;
+}
+.bg-main-yellow {
+  background: #edb21d !important;
+}
+.text-main-neutral {
+  color: #e3d4d4 !important;
+}
+.bg-main-neutral {
+  background: #e3d4d4 !important;
+}
+
+.text-default-black {
+  color: #090909 !important;
+}
+.bg-default-black {
+  background: #090909 !important;
+}
+.text-default-1 {
+  color: #1c1c1e !important;
+}
+.bg-default-1 {
+  background: #1c1c1e !important;
+}
+.text-default-2 {
+  color: #2e2e30 !important;
+}
+.bg-default-2 {
+  opacity: 0.2;
+  background: #2e2e30 !important;
+}
+.text-default-3 {
+  color: #6d6f73 !important;
+}
+.bg-default-3 {
+  background: #6d6f73 !important;
+}
+
+.text-main-white {
+  color: #fff !important;
+}
+.bg-main-white {
+  background: #fff !important;
+}
+
+.text-default-4 {
+  color: #004b34 !important;
+}
+.bg-default-4 {
+  background: #004b34 !important;
+}
+
+.text-default-5 {
+  color: #50b748 !important;
+}
+.bg-default-5 {
+  background: #50b748 !important;
+}
+
+.text-status-open {
+  color: #ddaa00 !important;
+}
+.bg-status-open {
+  background: #ddaa00 !important;
+}
+
+.bg-status-open-light {
+  background: #fff7db !important;
+}
+.text-status-progress {
+  color: #9b8579 !important;
+}
+.text-status-progress-light {
+  color: #9747ff !important;
+}
+.bg-status-progress-light {
+  background: #e8d6ff !important;
+}
+.bg-status-progress {
+  background: #9b8579 !important;
+}
+.text-status-review {
+  color: #d62223 !important;
+}
+.bg-status-review {
+  background: #d62223 !important;
+}
+.text-status-review-light {
+  color: #d62223 !important;
+}
+.bg-status-review-light {
+  background: #ffe0e1 !important;
+}
+.text-status-sign {
+  color: #0152f9 !important;
+}
+.bg-status-sign {
+  background: #0152f9 !important;
+}
+.bg-status-sign-light {
+  background: #d4e2ff !important;
+}
+.text-status-approval {
+  color: #00b3b7 !important;
+}
+.bg-status-approval {
+  background: #00b3b7 !important;
+}
+.bg-status-approval-light {
+  background: #e3feff !important;
+}
+.text-status-completed {
+  color: #50b748 !important;
+}
+.bg-status-completed {
+  background: #50b748 !important;
+}
+.bg-status-completed-light {
+  background: #d7ffd4 !important;
+}
+.text-status-deadline {
+  color: #dd001b !important;
+}
+.bg-status-deadline {
+  background: #dd001b !important;
+}
+.bg-status-deadline-light {
+  background: #ffe3e6 !important;
+}
+
+.text-dark-green-2 {
+  color: #035c40 !important;
+}
+.bg-dark-green-2 {
+  background: #035c40 !important;
+}
+.text-dark-green-tw-50 {
+  color: rgba(22, 101, 52, 0.5);
+}
+
+.text-dark-cream {
+  color: #d0c184 !important;
+}
+.bg-dark-cream {
+  background: #d0c184 !important;
+}
+
+.bg-dark-login {
+  background-color: #d0c184;
+}
+
+/* OVERRIDE QUASAR DEFAULT CSS */
+.q-field--outlined.q-field--readonly .q-field__control:before {
+  border-style: solid;
+}
+
+.width-row-1 {
+  width: 65%;
+  max-width: 796px;
+}
+.width-row-other {
+  width: 11.666%;
+}
+
+/* tembak paksa css */
+.q-date__main
+  .q-date__navigation
+  .q-btn-item.non-selectable
+  .q-btn__content
+  .block {
+  color: #bba64d;
+}
+
+.q-expansion-item__container hr.q-expansion-item__border {
+  opacity: 0 !important;
+}
+
+.riwayat-page .q-field--outlined .q-field__control,
+.riwayat-page .q-field {
+  /* border-radius: 10px;
+  border: unset; */
+}
+
+.riwayat-page .q-field--dark .q-field__control:before {
+  border: none;
+}
+
+.custom-css-rm-bdr:before {
+  border: none !important;
+}
+
+.custom-css-text-dark-green span,
+.custom-css-text-dark-green i {
+  color: #004b34 !important;
+}
+
+.rimayat-page .max-w-tanggal {
+  max-width: 261px;
+}
+
+.rimayat-page .max-w-laporan {
+  max-width: 911px;
+}
+.rimayat-page .max-w-deadline {
+  max-width: 261px;
+}
+
+.custom-css .rounded-left {
+  border-radius: 10px 0 0 10px !important;
+}
+.custom-css .rounded-left:focus {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.custom-css.search-rounded-right {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+.text-main-green.custom-css:before {
+  border: none;
+}
+.text-main-green.custom-css .q-field__native,
+.text-main-green.custom-css .q-icon {
+  color: #fff !important;
+}
+
+.q-field--dark .q-field__control:before {
+  border: none;
+}
+
+.custom-css .q-expansion-item__container .q-item {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.bg-login {
+  background-image: url(/assets/images/login-bg.jpg);
+}
+
+.custom-h-60 {
+  height: 60px !important;
+}
+
+.custom-css.q-btn {
+  border: 2px solid;
+}
+
+/* segitiga */
+.triangle {
+  position: relative;
+  text-align: left;
+}
+.triangle:before,
+.triangle:after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: 80px;
+  height: 80px;
+  border-top-right-radius: 40px;
+}
+
+.triangle {
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+    translate(0, -50%);
+}
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+.doc-light {
+  --q-color-document-foreground: #000 !important; /* Warna teks */
+  --q-color-document-background: #fff !important; /* Warna latar belakang */
+  --q-color-document-border: #ccc !important; /* Warna border */
+}
+
+.q-date__event {
+  position: absolute;
+  z-index: -1; /* !important */
+  bottom: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  /* kalo di tag style tetep ga berubah dibuat important aja */
+}
+
+.q-btn.custom-css-border-gold {
+  border: 1px solid #d0c184 !important;
+}
+
+.checkbox-yellow input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-yellow label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-yellow label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #f1c40f; /* Warna border kuning */
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.checkbox-yellow input[type="checkbox"]:checked + label:before {
+  background-color: #f1c40f; /* Warna latar belakang kuning */
+}
+
+.checkbox-green input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-green label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-green label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #004b34; /* Warna border kuning */
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.checkbox-green input[type="checkbox"]:checked + label:before {
+  background-color: #004b34; /* Warna latar belakang kuning */
+}
