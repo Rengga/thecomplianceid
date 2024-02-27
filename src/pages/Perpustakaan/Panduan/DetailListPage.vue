@@ -137,8 +137,9 @@
               clickable
               v-ripple
               :to="{
-                name: 'perpustakaan-guides-list',
-                params: { slug: row.slug },
+                name: 'perpustakaan-guides-detail',
+                params: { slug: document, detail: row.slug },
+                query: { ext: row.ext },
               }"
               exact
               class="tw-rounded-md"

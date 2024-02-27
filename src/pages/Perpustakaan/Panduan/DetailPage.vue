@@ -38,46 +38,69 @@
     </q-breadcrumbs>
 
     <div
-      class="tw-flex-none tw-m-2 lg:tw-m-0 lg:tw-mt-3 tw-bg-default-1 tw-text-white tw-tracking-wide tw-text-sm tw-rounded-md tw-py-2 md:tw-py-3 lg:tw-py-3 tw-px-2 md:tw-px-3 lg:tw-px-5 tw-flex tw-items-center tw-space-x-3 tw-justify-center lg:tw-justify-normal"
+      class="tw-flex-none tw-m-2 lg:tw-m-0 lg:tw-mt-3 tw-tracking-wide tw-text-sm tw-rounded-md tw-py-2 md:tw-py-3 lg:tw-py-3 tw-px-2 md:tw-px-3 lg:tw-px-5 tw-flex tw-items-center tw-space-x-3 tw-justify-center lg:tw-justify-normal"
+      :class="
+        $q.dark.isActive
+          ? 'tw-bg-default-1 tw-text-white'
+          : 'tw-bg-slate-50 tw-shadow-md'
+      "
     >
       <q-btn
         text-color="default-3"
         no-caps
-        class="tw-text-xs tw-py-2 lg:tw-px-5 tw-tracking-wide tw-rounded-md tw-bg-default-2/20"
+        align="left"
+        class="tw-text-xs tw-py-2 lg:tw-pr-5 tw-tracking-wide tw-rounded-md 0 tw-w-40"
         :to="{ name: 'perpustakaan-rules' }"
         exact
+        flat
       >
         <div class="tw-flex tw-flex-row tw-space-x-2 tw-items-center">
           <div
-            class="tw-w-[6px] tw-h-[6px] tw-rounded-full tw-bg-default-3"
+            class="tw-w-[6px] tw-h-[6px] tw-rounded-full"
+            :class="$q.dark.isActive ? 'tw-bg-gray-500' : 'tw-bg-green-800/50'"
           ></div>
-          <span class="tw-text-default-3">Peraturan</span>
+          <span
+            :class="
+              $q.dark.isActive ? 'tw-text-gray-500' : 'tw-text-green-800/50'
+            "
+            >Peraturan</span
+          >
         </div>
       </q-btn>
       <q-btn
-        color="default-3"
         text-color="white"
         no-caps
-        class="tw-text-xs tw-py-2 lg:tw-px-5 tw-tracking-wide tw-rounded-md"
+        align="left"
+        class="tw-text-xs tw-py-2 lg:tw-px-5 tw-tracking-wide tw-rounded-md tw-w-40"
+        :class="$q.dark.isActive ? 'tw-bg-default-3' : 'tw-bg-default-6'"
         :to="{ name: 'perpustakaan-guides' }"
         exact
       >
         <div class="tw-flex tw-flex-row tw-space-x-2 tw-items-center">
           <div
-            class="tw-w-[6px] tw-h-[6px] tw-rounded-full tw-bg-main-green"
+            class="tw-w-[6px] tw-h-[6px] tw-rounded-full"
+            :class="$q.dark.isActive ? 'bg-default-4' : 'tw-bg-default-7'"
           ></div>
-          <span>Panduan</span>
+          <span
+            :class="$q.dark.isActive ? 'text-default-4' : 'tw-text-default-7'"
+            >Panduan</span
+          >
         </div>
       </q-btn>
     </div>
 
     <div
-      class="tw-flex-1 tw-bg-default-1 tw-text-white tw-tracking-wide tw-text-sm tw-rounded-t-md tw-flex tw-flex-col tw-space-y-3 !tw-mt-0 lg:!tw-mt-3 tw-pt-2 md:tw-pt-3 lg:tw-pt-3"
+      class="tw-flex-1 tw-tracking-wide tw-text-sm tw-rounded-t-md tw-flex tw-flex-col tw-space-y-3 !tw-mt-0 lg:!tw-mt-3 tw-pt-2 md:tw-pt-3 lg:tw-pt-3"
+      :class="
+        $q.dark.isActive
+          ? 'tw-bg-default-1 tw-text-white'
+          : 'tw-bg-slate-50 tw-shadow-md tw-text-default-6'
+      "
     >
       <q-scroll-area
         ref="qScrollAreaContainer"
         dark
-        class="tw-flex-1 tw-grid tw-grid-cols-1 tw-gap-3 tw-px-2 md:tw-px-3 lg:tw-px-5 tw-tracking-wide tw-text-sm tw-text-white"
+        class="tw-flex-1 tw-grid tw-grid-cols-1 tw-gap-3 tw-px-2 md:tw-px-3 lg:tw-px-5 tw-tracking-wide tw-text-sm"
         :thumb-style="{
           borderRadius: '9999px',
           backgroundColor: '#50B748',
