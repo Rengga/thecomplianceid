@@ -1,6 +1,9 @@
 <template>
-  <q-scroll-area style="height: calc(100vh - 85px)">
-    <div v-for="n in 1" :key="n" class="q-py-xs">
+  <div
+    style="height: calc(100vh - 50px); overflow: auto"
+    class="lg:tw-pb-2 tw-pb-14"
+  >
+    <div class="q-py-xs">
       <div class="">
         <q-page class="tw-px-10 tw-space-y-4">
           <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-4 tw-flex-wrap">
@@ -270,7 +273,7 @@
                 </div>
                 <div
                   id="chart-single"
-                  class="tw-h-64 lg:tw-absolute tw-top-12 tw-w-80"
+                  class="tw-h-64 lg:tw-absolute tw-top-12 lg:tw-w-80"
                 ></div>
               </div>
               <div
@@ -378,7 +381,7 @@
                   </span>
                   <span>22 Jan 2024</span>
                   <div
-                    class="tw-rounded-full tw-h-2 tw-w-24"
+                    class="tw-rounded-full tw-h-2 lg:tw-w-24 tw-w-16"
                     :class="
                       $q.dark.isActive ? 'tw-bg-white' : 'tw-bg-gray-800/20'
                     "
@@ -400,7 +403,7 @@
                   </span>
                   <span>22 Jan 2024</span>
                   <div
-                    class="tw-rounded-full tw-h-2 tw-w-24"
+                    class="tw-rounded-full tw-h-2 lg:tw-w-24 tw-w-16"
                     :class="
                       $q.dark.isActive ? 'tw-bg-white' : 'tw-bg-gray-800/20'
                     "
@@ -423,7 +426,7 @@
                   </span>
                   <span>22 Jan 2024</span>
                   <div
-                    class="tw-rounded-full tw-h-2 tw-w-24"
+                    class="tw-rounded-full tw-h-2 lg:tw-w-24 tw-w-16"
                     :class="
                       $q.dark.isActive ? 'tw-bg-white' : 'tw-bg-gray-800/20'
                     "
@@ -446,7 +449,7 @@
                   </span>
                   <span>22 Jan 2024</span>
                   <div
-                    class="tw-rounded-full tw-h-2 tw-w-24"
+                    class="tw-rounded-full tw-h-2 lg:tw-w-24 tw-w-16"
                     :class="
                       $q.dark.isActive ? 'tw-bg-white' : 'tw-bg-gray-800/20'
                     "
@@ -593,7 +596,7 @@
                 </div>
               </div>
               <div
-                class="tw-shadow-md tw-px-10 lg:tw-w-1/2 tw-rounded-xl lg:tw-max-w-[379px]"
+                class="tw-shadow-md lg:tw-px-10 lg:tw-w-1/2 tw-w-full tw-rounded-xl lg:tw-max-w-[379px]"
                 :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
               >
                 <q-date
@@ -602,12 +605,13 @@
                   minimal
                   :class="$q.dark.isActive ? 'tw-bg-zinc-900' : 'tw-bg-white'"
                   flat
+                  rounded
                   v-model="calendarDate"
                   :events="eventsFn"
                   :event-color="
                     (date) => (date[9] % 2 === 0 ? 'main-gold' : 'main-green')
                   "
-                  class="full-width tw-w-full"
+                  class="full-width tw-w-full tw-rounded-xl"
                 />
               </div>
             </div>
@@ -615,7 +619,7 @@
         </q-page>
       </div>
     </div>
-  </q-scroll-area>
+  </div>
 </template>
 
 <script>

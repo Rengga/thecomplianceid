@@ -421,3 +421,11 @@
 .checkbox-green input[type="checkbox"]:checked + label:before {
   background-color: #004b34; /* Warna latar belakang kuning */
 }
+
+.q-scrollarea__container {
+  /* position: unset !important; */
+}
+
+body {
+  overflow: hidden;
+}
